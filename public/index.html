@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aali rotbe</title>
+  <link rel="stylesheet" href="/public/build/tailwind.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-purple-100 container mx-auto">
+  <!-- header logo navbar -->
+  <header class="">
+    <section class="w-full h-screen flex-col flex justify-center items-center mt-10 lg:mt-48">
+      <img src="/assets/images/org2.png" alt="" class="lg:h-[250px] h-[220px]" />
+      <h1 class="text-yellow-200 text-2xl font-bold lg:text-4xl">
+        موسسه عالی رتبه
+      </h1>
+    </section>
+  </header>
+  <!-- input forms -->
+  <main class="w-full h-full flex flex-col justify-center items-center p-4 gap-y-4">
+    <h3 class="flex justify-start lg:w-2/5 h-auto lg:text-xl text-lg font-bold text-purple-700 mt-4">
+      نام و نام خانوادگی : <span class="text-red-600"> * </span>
+    </h3>
+    <input type="text"
+      class="lg:w-2/5 w-4/5 bg-white py-3 px-2 caret-purple-500 text-purple-900 lg:text-lg font-bold rounded-xl flex-1 outline-0 placeholder:font-bold shadow-md placeholder:text-purple-200"
+      placeholder="نام و نام خانوادگی" />
+    <h3 class="flex justify-start lg:w-2/5 h-auto lg:text-xl text-lg font-bold text-purple-700 mt-4">
+      نام مدرسه : <span class="text-red-600"> * </span>
+    </h3>
+    <input type="text"
+      class="lg:w-2/5 w-4/5 bg-white py-3 px-2 caret-purple-500 text-purple-900 lg:text-lg font-bold rounded-xl flex-1 outline-0 placeholder:font-bold shadow-md placeholder:text-purple-200"
+      placeholder="نام مدرسه" />
+    <h3 class="flex justify-start lg:w-2/5 h-auto lg:text-xl text-lg font-bold text-purple-700 mt-4">
+      شماره تماس : <span class="text-red-600"> * </span>
+    </h3>
+    <input maxlength="12" type="text"
+      class="lg:w-2/5 w-4/5 bg-white py-3 px-2 caret-purple-500 text-purple-900 lg:text-lg font-bold rounded-xl flex-1 outline-0 placeholder:font-bold shadow-md placeholder:text-purple-200"
+      placeholder="09130000000" />
+  </main>
+  <!-- 4 btn selection -->
+  <section class="container flex lg:flex-row flex-col justify-center items-center h-auto w-full">
+    <h2 class="text-lg lg:text-xl text-purple-700 font-bold mb-4 flex justify-center items-center lg:pl-4 pl-1">
+      رشته تحصیلی:
+    </h2>
+    <div class="flex lg:py-8 py-6 justify-center items-center lg:gap-x-4 gap-x-2 text-center"
+      x-data="{radio:1 , isActive : 'ring-4 ring-purple-400 text-purple-700 bg-purple-300'}">
+      <div @click="radio = 1" :class="radio === 1 ? isActive : ''"
+        class="bg-white w-full text-center shadow-md text-purple-950 h-auto lg:px-4 lg:py-2 px-2 py-1 flex justify-around items-center mb-4 rounded-lg cursor-pointer">
+        <div class="">
+          <h3 class="font-bold p-1 lg:text-xl text-sm">تجربی</h3>
+        </div>
+        <div x-show="radio === 1" class="w-4 h-4 rounded-full bg-purple-500 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+      </div>
+      <div @click="radio = 2" :class="radio === 2 ? isActive : ''"
+        class="bg-white w-full text-center shadow-md text-purple-950 h-auto lg:px-4 lg:py-2 px-2 py-1 flex justify-around items-center mb-4 rounded-lg cursor-pointer">
+        <div class="">
+          <h3 class="font-bold p-1 lg:text-xl text-sm">ریاضی</h3>
+        </div>
+        <div x-show="radio === 2" class="w-4 h-4 rounded-full bg-purple-500 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+      </div>
+      <div @click="radio = 3" :class="radio === 3 ? isActive : ''"
+        class="bg-white w-full text-center shadow-md text-purple-950 h-auto lg:px-4 lg:py-2 px-2 py-1 flex justify-around items-center mb-4 rounded-lg cursor-pointer">
+        <div class="">
+          <h3 class="font-bold p-1 lg:text-xl text-sm">ادبیات</h3>
+        </div>
+        <div x-show="radio === 3" class="w-4 h-4 rounded-full bg-purple-500 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+      </div>
+      <div @click="radio = 4" :class="radio === 4 ? isActive : ''"
+        class="bg-white w-full text-center shadow-md text-purple-950 h-auto lg:px-4 lg:py-2 px-2 py-1 flex justify-around items-center mb-4 rounded-lg cursor-pointer">
+        <div class="">
+          <h3 class="font-bold p-1 lg:text-xl text-sm">زبان</h3>
+        </div>
+        <div x-show="radio === 4" class="w-4 h-4 rounded-full bg-purple-500 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- one btn popup -->
+  <section class="container flex flex-col justify-center items-center h-auto w-full mb-12">
+    <div class="relative w-full flex justify-center items-center" x-data="{ isOpen: false }">
+      <button @click="isOpen = !isOpen"
+        class="bg-white px-4 lg:w-2/6 w-3/6 py-2 text-purple-900 lg:text-lg font-bold rounded-lg z-30 relative hover:bg-purple-200 shadow focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 focus:ring-offset-white">
+        مقطع تحصیــــــــــــــــــــــــــلی
+      </button>
+      <button x-show="isOpen" @click="isOpen = false"
+        class="inset-0 fixed w-full h-full bg-slate-400 opacity-50 shadow"></button>
+      <div x-show="isOpen"
+        class="border-0 text-center absolute lg:w-1/6 w-2/6 shadow flex z-30 flex-col bg-gray-300 justify-center mt-4 overflow-hidden rounded-xl">
+        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">دوازدهم</a>
+        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">یازدهم</a>
+        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">دهم</a>
+        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">نهم</a>
+        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">هشتم</a>
+        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">هفتم</a>
+        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">ششم</a>
+      </div>
+    </div>
+
+    <!-- submit btn -->
+
+    <button
+      class="lg:w-2/6 w-2/6 mt-8 text-white bg-green-500 shadow-xl hover:opacity-70 flex justify-center items-center text-lg lg:text-2xl h-auto p-4 rounded-lg font-bold">
+      ثبت نـام
+    </button>
+    <h3 class="mt-12 shadow-sm text-base text-gray-500 lg:mt-16 lg:text-lg cursor-default">
+      همکاران ما تا 24 ساعت آینده با شما تماس خواهند گرفت.
+    </h3>
+  </section>
+
+  <!-- introduction social media -->
+  <section class="w-full lg:h-64 lg:mt-40 flex justify-center items-center h-28 bg-purple-500">
+    <div class="main-icons flex w-full justify-around items-center bg-purple-500 py-0">
+      <a href="">
+        <img src="/assets/images/Icons/mentor-logo.png" alt=""
+          class="lg:w-36 lg:h-36 lg:p-6 bg-white lg:rounded-3xl rounded-full shadow-2xl w-14 h-14 p-2.5 md:w-20 md:h-20" /></a>
+      <a href="">
+        <img src="/assets/images/Icons/gaj-logo.png" alt=""
+          class="lg:w-[150px] lg:h-[150px] lg:p-6 bg-white lg:rounded-3xl rounded-full shadow-2xl w-14 h-14 p-2.5 md:w-20 md:h-20" /></a>
+      <a href="">
+        <img src="/assets/images/Icons/telegram.png" alt=""
+          class="lg:w-36 lg:h-36 lg:p-6 bg-white lg:rounded-3xl rounded-full shadow-2xl w-14 h-14 p-2.3 md:w-20 md:h-20" /></a>
+      <a href="">
+        <img src="/assets/images/Icons/instagram2.png" alt=""
+          class="lg:w-36 lg:h-36 lg:p-6 bg-white lg:rounded-3xl rounded-full shadow-2xl w-14 h-14 p-2.5 md:w-20 md:h-20" /></a>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+
+
+  <footer class="w-full h-auto flex justify-around items-center">
+    <div class="w-full h-auto flex-col justify-between items-center bg-purple-800 text-white">
+      <div class="flex-col justify-center items-center lg:flex lg:justify-between">
+        <h2
+          class="bg-purple-800 w-full flex justify-center items-center font-bold text-white py-3 text-lg md:text-xl lg:text-4xl pt-6">
+          خدمات</h2>
+        <h3 class="lg:w-2/3 h-auto lg:p-8 lg:px-28 text-sm p-8 text-justify lg:text-lg">
+          بعد از ثبت نام در سایت ، دانش آموزان میتوانند از خدمات مشاورهای
+          رایگان بهره مند شوند. مشـاوران عالی رتبه بـا تخصـص ویـژه در زمینـه
+          موفقیـت تحصیلـی بهتریـن راهنمایـی را بـه دانش آمـوزان میکننـد و تحلیـل
+          آزمـون را بـه عنـوان بخـش مهـم فراینـد مشـاوره آزمـون انجـام میدهنـد.
+        </h3>
+
+        <h3
+          class="lg:w-2/3 h-auto lg:p-8 lg:px-28 text-sm p-8 text-justify border-b-2 pb-16 lg:pb-10 border-purple-900">
+          دانش آموزانــی کــه در آزمونهــای سراســری گاج ثبــت
+          نــام میکننــد، همــراه آزمونهــا میتواننــد از برنامــه مطالعاتــی و
+          دانشــنامه بــه تفکیــک هــر آزمــون اســتفاده کننــد. برنامه هــای
+          مطالعاتــی در تــک تــک مراحــل آزمــون بــرای تمامــی مقاطــع
+          باتوجــه بــه بودجه بنــدی آزمونهــا طراحــی شــده اند. ایــن برنامه
+          هــای مطالعاتــی کــه توســط تیم عالی رتبه کلینیــک مشــاوره گاج
+          طراحــی و تنظیــم شــده اند، بــه دانش آمــوز کمــک کــرده تــا بــرای
+          تــک تــک ســاعتهای مطالعاتــی خــود برنامه ریـزی دقیـق و مـدون داشـته
+          و هدفمنـد بـه مطالعـه ی خـود ادامـه دهـد. بــه وســیله ایــن برنامه
+          هــا مخاطبیــن آزمــون ایــن امــکان را پیــدا میکننــد کــه تــا
+          تمـام مراحـل مطالعاتـی خـود را بـه خوبـی طـی نماینـد. لـذا بـا پیشـروی
+          روزانـه از روی ایــن برنامه هــا کــه همگــی براســاس نــکات
+          مشــاورهای تنظیــم شــده اند دانش آمــوزان از پوشــش همــه مباحــث
+          آزمــون مطمئــن میشــوند.
+        </h3>
+      </div>
+
+
+      <div class="flex justify-around lg:justify-between lg:pr-28 items-center pb-12 pt-8 lg:pt-2">
+        <ul class="w-1/3 h-auto flex-col gap-y-4">
+          <li class="font-bold text-xl mb-4">ارتباط با ما</li>
+          <li class="py-1">
+            <span class="font-bold text-sm">شماره تماس :</span>
+            <span>09026956828</span>
+          </li>
+          <li class="py-1">
+            <span class="font-bold text-sm">ایمیل :</span>
+            <span>test@gmail.com</span>
+          </li>
+          <li class="py-1">
+            <span class="font-bold text-sm">آدرس :</span>
+            <span>کرمان,استقلال-2<br />,ساختمان-گاج</span>
+          </li>
+          <li class="py-1">
+            <span class="font-bold text-sm"></span>
+            <span></span>
+          </li>
+        </ul>
+
+        <ul class="w-1/3 h-auto flex-col gap-y-4">
+          <li class="font-bold text-xl mb-4"></li>
+          <li class="py-1 w-24 h-auto rounded-sm shadow">
+            <img src="/assets/images/QR code.jpg" alt="" class="w-full h-auto shadow" />
+          </li>
+          <li class="py-1 pt-3 w-24 h-auto rounded-sm">
+            <img src="/assets/images/org2-removebg-preview.png" alt="" class="w-full h-auto rounded-sm"/>
+          </li>
+          <li class="py-1">
+            <span class="font-bold text-sm"></span>
+            <span></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- permition -->
+
+  <div class="bg-purple-950 text-white w-full h-12 lg:h-16 text-xs flex justify-center items-center lg:text-base">
+    کلیه ی حقوق مربوط به این سایت متعلق به
+    <span><a href="" class="text-red-700">موسسه عالی رتبه </a></span>
+    میباشد
+  </div>
+
+  <script src=""></script>
+</body>
+
+</html>

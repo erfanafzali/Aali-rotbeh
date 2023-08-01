@@ -1,0 +1,19 @@
+header {
+  background-image: linear-gradient(rgba(0, 0, 0.2, 0.2), #250029),
+    url("/assets/images/test3\ copy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 724px) {
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0.2, 0.2), #250029),
+      url("/assets/images/test1.jpeg");
+    height: 650px;
+  }
+}
