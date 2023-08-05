@@ -106,20 +106,21 @@
   <section class="container flex flex-col justify-center items-center h-auto w-full mb-12">
     <div class="relative w-full flex justify-center items-center" x-data="{ isOpen: false }">
       <button @click="isOpen = !isOpen"
-        class="bg-white px-4 lg:w-2/6 w-3/6 py-2 text-purple-900 lg:text-lg font-bold rounded-lg z-30 relative hover:bg-purple-200 shadow focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 focus:ring-offset-white">
+        class="bg-white px-4 container-btn lg:w-2/6 w-3/6 py-2 text-purple-900 lg:text-lg font-bold rounded-lg z-30 relative hover:bg-purple-200 shadow focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 focus:ring-offset-white">
+        <input type="hidden" name="" class="input-hidden">
         مقطع تحصیــــــــــــــــــــــــــلی
       </button>
       <button x-show="isOpen" @click="isOpen = false"
-        class="inset-0 fixed w-full h-full bg-slate-400 opacity-50 shadow"></button>
+        class="inset-0 fixed w-full  h-full bg-slate-400 opacity-50 shadow modal"></button>
       <div x-show="isOpen"
-        class="border-0 text-center absolute lg:w-1/6 w-2/6 shadow flex z-30 flex-col bg-gray-300 justify-center mt-4 overflow-hidden rounded-xl">
-        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">دوازدهم</a>
-        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">یازدهم</a>
-        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">دهم</a>
-        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">نهم</a>
-        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">هشتم</a>
-        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">هفتم</a>
-        <a href="" class="text-purple-700 bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg">ششم</a>
+        class="border-0 btns text-center absolute lg:w-1/6 w-2/6 shadow flex z-30 flex-col bg-gray-300 justify-center mt-4 overflow-hidden rounded-xl">
+        <button value="دوازدهم" class="text-purple-700 btn bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg btn">دوازدهم</button>
+        <button value="یازدهم" class="text-purple-700 btn bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg btn">یازدهم</button>
+        <button value="دهم" class="text-purple-700 btn bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg btn">دهم</button>
+        <button value="نهم" class="text-purple-700 btn bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg btn">نهم</button>
+        <button value="هشتم" class="text-purple-700 btn bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg btn">هشتم</button>
+        <button value="هفتم" class="text-purple-700 btn bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg btn">هفتم</button>
+        <button value="ششم" class="text-purple-700 btn bg-white font-bold p-4 hover:bg-purple-200 text-base lg:text-lg btn">ششم</button>
       </div>
     </div>
 
@@ -234,7 +235,7 @@
     میباشد
   </div>
 
-  <script src=""></script>
+  <script src="/src/js/app.js"></script>
 </body>
 
 </html>
