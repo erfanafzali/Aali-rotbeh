@@ -14,8 +14,6 @@ function getBtnValue(e) {
 
     allBtn.forEach((btn) => {
         btn.addEventListener("click", (e) => {
-            console.log(e.target.value);
-
             getBtnName.innerText = e.target.value
             closeBtn.style.display = "none"
             backDrop.style.display = "none"
