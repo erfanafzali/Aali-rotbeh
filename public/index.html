@@ -12,7 +12,22 @@
 
 <body class="bg-purple-100 container mx-auto">
   <!-- header logo navbar -->
-  <header class="">
+  <header class="relative w-full">
+    <div class="">
+      <a href="#form-section1" data-duration="300"
+        class="js-smooth-scroll z-20  text-purple-100  absolute top-0 text-left text-lg lg:text-2xl font-bold m-6 h-auto">
+        <button
+          class="border-4 px-2 py-1 lg:px-3 lg:py-2 border-purple-600 bg-purple-600 rounded-xl flex justify-center items-center whitespace-nowrap gap-x-1"><span><svg
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
+          <p>ثبت نام</p>
+        </button>
+      </a>
+    </div>
     <section class="w-full h-screen flex-col flex justify-center items-center mt-10 lg:mt-48">
       <img src="/assets/images/org2.png" alt="" class="lg:h-[250px] h-[220px]" />
       <h1 class="text-yellow-200 text-2xl font-bold lg:text-4xl">
@@ -20,8 +35,18 @@
       </h1>
     </section>
   </header>
+  <!-- services -->
+  <div class="services w-full h-auto flex justify-center items-center bg-purple-100 mt-4 lg:mt-0">
+
+    <h1
+      class="w-2/3 lg:relative title-services lg:-top-12 rounded-xl lg:w-1/2 flex justify-center items-center bg-white lg:py-16 py-6">
+      برای شرکت در جلسه آنلاین یا حضوری مشاوره با مشاوران ارشد موسسه ثبت نام کنید.
+      ثبت نام برای دانش آموزان مدارس استان کرمان رایگان می باشد.
+    </h1>
+
+  </div>
   <!-- input forms -->
-  <main class="w-full h-full flex flex-col justify-center items-center p-4 gap-y-4">
+  <main id="form-section1" class=" w-full h-full flex flex-col justify-center items-center p-4 gap-y-4">
     <h3 class="flex justify-start lg:w-2/5 h-auto lg:text-xl text-lg font-bold text-purple-700 mt-4">
       نام و نام خانوادگی : <span class="text-red-600"> * </span>
     </h3>
@@ -163,15 +188,16 @@
   <!-- packeges -->
   <section class="w-full h-auto py-12">
     <div class="flex flex-col lg:flex lg:flex-row justify-center items-center w-full gap-x-14 px-4">
-      <!-- boronz-package -->
+      <!-- first-package -->
       <div class="flex flex-col justify-center items-center w-3/4 lg:w-1/4 lg:my-8 my-4 shadow-lg h-auto">
-        <div class="w-full bg-yellow-500 rounded-tl-2xl rounded-tr-2xl overflow-hidden">
-          <h3 class="w-full flex justify-center items-center py-2 text-2xl text-yellow-50 shadow font-bold">طرح برنزی
+        <div class="w-full bg-purple-600 rounded-tl-2xl rounded-tr-2xl overflow-hidden">
+          <h3 class="w-full flex justify-center items-center py-2 text-2xl text-white shadow font-bold"> پکیج نخبه
+            پروری
           </h3>
           <div class="w-full flex justify-start px-4 text-white items-center">
             <div class="w-full flex  flex-col justify-center items-start">
               <div class="flex justify-between items-center gap-x-1">
-                <span class="text-base my-4 flex justify-between items-center ">طرح عمومی</span>
+                <span class="text-base my-4 flex justify-between items-center ">متوسطه اول</span>
                 <span class="text-green-400 font-bold "><svg xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 font-bold">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -182,66 +208,78 @@
 
               <div class="mb-4">
                 <span class="text-xl font-bold">149000</span>
-                <span class="text-sm">تومان/ماهانه</span>
+                <span class="text-sm">تومان/سالانه</span>
               </div>
             </div>
           </div>
         </div>
-        <ul class="flex flex-col justify-center items-start bg-yellow-50 w-full p-4 gap-y-4  text-xl text-purple-700 ">
+        <ul
+          class="flex flex-col justify-center items-start bg-gray-100 w-full p-4 gap-y-4  text-lg font-bold text-purple-700 ">
           <li class="flex justify-center items-center gap-x-2">
-            <span class="border-2 rounded-md bg-green-400 border-purple-800">
+            <span class="border-2 rounded-md bg-white border-purple-800">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </span>
-            <p>test1</p>
+            <p>آزمون های برنامه دار</p>
           </li>
           <li class="flex justify-center items-center gap-x-2">
-            <span class="border-2 rounded-md bg-green-400 border-purple-800">
+            <span class="border-2 rounded-md bg-white border-purple-800">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </span>
-            <p>test2</p>
+            <p>مهارت های فردی </p>
           </li class="flex justify-center items-center gap-x-2">
           <li class="flex justify-start items-center gap-x-2">
-            <span class="border-2 rounded-md bg-green-400 border-purple-800">
+            <span class="border-2 rounded-md bg-white border-purple-800">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </span>
-            <p>test3</p>
+            <p>مهارت های تست زنی</p>
           </li>
           <li class="flex justify-center items-center gap-x-2">
-            <span class="border-2 rounded-md bg-green-400 border-purple-800">
+            <span class="border-2 rounded-md bg-white border-purple-800">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </span>
-            <p>test4</p>
+            <p>انتخاب رشته</p>
+          </li>
+          <li class="flex justify-center items-center gap-x-2">
+            <span class="border-2 rounded-md bg-white border-purple-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
+                stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+            </span>
+            <p>تیزهوشان</p>
           </li>
         </ul>
-        <div class="w-full px-8 py-4 bg-yellow-50">
-          <button class="w-full h-12 rounded-xl text-yellow-50 text-xl font-bold bg-yellow-500 px-4">ثبت سفارش</button>
+        <div class="w-full px-8 py-4 bg-gray-100">
+          <button class="w-full h-12 rounded-xl text-white text-xl font-bold bg-purple-600 px-4">ثبت نام</button>
         </div>
       </div>
-      <!-- gold-packege -->
-      <div class="flex flex-col justify-center items-center w-3/4 lg:w-1/4 lg:my-8 my-4 shadow-xl h-auto lg:mb-12">
-        <div class="w-full bg-yellow-700 rounded-tl-2xl rounded-tr-2xl overflow-hidden lg:p-4">
-          <h3 class="w-full flex justify-center items-center py-2 text-2xl text-yellow-400 shadow font-bold">طرح طلایی
+      <!-- second-packege -->
+      <div class="flex flex-col justify-center items-center w-3/4 lg:w-1/4 lg:my-8 my-4 shadow-lg h-auto ">
+        <div class="w-full bg-purple-700 rounded-tl-2xl rounded-tr-2xl overflow-hidden p-4">
+          <h3 class="w-full flex justify-center items-center py-2 text-2xl text-white shadow font-bold"> پکیج نخبه
+            پروری
           </h3>
           <div class="w-full flex justify-start px-4 text-white items-center">
             <div class="w-full flex  flex-col justify-center items-start">
               <div class="flex justify-between items-center gap-x-1">
-                <span class="text-base my-4 flex justify-between items-center ">طرح اقتصادی</span>
+                <span class="text-base my-4 flex justify-between items-center ">متوسطه اول</span>
                 <span class="text-green-400 font-bold "><svg xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 font-bold">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -252,66 +290,78 @@
 
               <div class="mb-4">
                 <span class="text-xl font-bold">149000</span>
-                <span class="text-sm">تومان/ماهانه</span>
+                <span class="text-sm">تومان/سالانه</span>
               </div>
             </div>
           </div>
         </div>
-        <ul class="flex flex-col justify-center items-start bg-yellow-300 w-full p-4 gap-y-4  text-xl text-purple-700 ">
+        <ul
+          class="flex flex-col justify-center items-start bg-gray-100 w-full p-4 gap-y-4  text-lg font-bold text-purple-700 ">
           <li class="flex justify-center items-center gap-x-2">
-            <span class="border-2 rounded-md bg-green-400 border-purple-800">
+            <span class="border-2 rounded-md bg-white border-purple-800">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </span>
-            <p>test1</p>
+            <p>آزمون های برنامه دار</p>
           </li>
           <li class="flex justify-center items-center gap-x-2">
-            <span class="border-2 rounded-md bg-green-400 border-purple-800">
+            <span class="border-2 rounded-md bg-white border-purple-800">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </span>
-            <p>test2</p>
+            <p>مهارت های فردی </p>
           </li class="flex justify-center items-center gap-x-2">
           <li class="flex justify-start items-center gap-x-2">
-            <span class="border-2 rounded-md bg-green-400 border-purple-800">
+            <span class="border-2 rounded-md bg-white border-purple-800">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </span>
-            <p>test3</p>
+            <p>مهارت های تست زنی</p>
           </li>
           <li class="flex justify-center items-center gap-x-2">
-            <span class="border-2 rounded-md bg-green-400 border-purple-800">
+            <span class="border-2 rounded-md bg-white border-purple-800">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </span>
-            <p>test4</p>
+            <p>انتخاب رشته</p>
+          </li>
+          <li class="flex justify-center items-center gap-x-2">
+            <span class="border-2 rounded-md bg-white border-purple-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
+                stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+            </span>
+            <p>تیزهوشان</p>
           </li>
         </ul>
-        <div class="w-full px-8 py-4 bg-yellow-300">
-          <button class="w-full h-12 rounded-xl text-yellow-300 text-xl font-bold bg-yellow-700 px-4">ثبت سفارش</button>
+        <div class="w-full px-8 py-4 bg-gray-100">
+          <button class="w-full h-12 rounded-xl text-white text-xl font-bold bg-purple-700 px-4">ثبت نام</button>
         </div>
       </div>
-      <!-- silver-package -->
+      <!-- third-package -->
       <div class="flex flex-col justify-center items-center w-3/4 lg:w-1/4 lg:my-8 my-4 shadow-lg h-auto">
-        <div class="w-full bg-gray-400 rounded-tl-2xl rounded-tr-2xl overflow-hidden">
-          <h3 class="w-full flex justify-center items-center py-2 text-2xl text-white shadow font-bold">طرح نقره ای
+        <div class="w-full bg-purple-600 rounded-tl-2xl rounded-tr-2xl overflow-hidden">
+          <h3 class="w-full flex justify-center items-center py-2 text-2xl text-white shadow font-bold"> پکیج نخبه
+            پروری
           </h3>
           <div class="w-full flex justify-start px-4 text-white items-center">
             <div class="w-full flex  flex-col justify-center items-start">
               <div class="flex justify-between items-center gap-x-1">
-                <span class="text-base my-4 flex justify-between items-center ">طرح معمولی</span>
+                <span class="text-base my-4 flex justify-between items-center ">متوسطه اول</span>
                 <span class="text-green-400 font-bold "><svg xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 font-bold">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -322,55 +372,66 @@
 
               <div class="mb-4">
                 <span class="text-xl font-bold">149000</span>
-                <span class="text-sm">تومان/ماهانه</span>
+                <span class="text-sm">تومان/سالانه</span>
               </div>
             </div>
           </div>
         </div>
-        <ul class="flex flex-col justify-center items-start bg-white w-full p-4 gap-y-4  text-xl text-purple-700 ">
+        <ul
+          class="flex flex-col justify-center items-start bg-gray-100 w-full p-4 gap-y-4  text-lg font-bold text-purple-700 ">
           <li class="flex justify-center items-center gap-x-2">
-            <span class="border-2 rounded-md bg-green-400 border-purple-800">
+            <span class="border-2 rounded-md bg-white border-purple-800">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </span>
-            <p>test1</p>
+            <p>آزمون های برنامه دار</p>
           </li>
           <li class="flex justify-center items-center gap-x-2">
-            <span class="border-2 rounded-md bg-green-400 border-purple-800">
+            <span class="border-2 rounded-md bg-white border-purple-800">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </span>
-            <p>test2</p>
+            <p>مهارت های فردی </p>
           </li class="flex justify-center items-center gap-x-2">
           <li class="flex justify-start items-center gap-x-2">
-            <span class="border-2 rounded-md bg-green-400 border-purple-800">
+            <span class="border-2 rounded-md bg-white border-purple-800">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </span>
-            <p>test3</p>
+            <p>مهارت های تست زنی</p>
           </li>
           <li class="flex justify-center items-center gap-x-2">
-            <span class="border-2 rounded-md bg-green-400 border-purple-800">
+            <span class="border-2 rounded-md bg-white border-purple-800">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </span>
-            <p>test4</p>
+            <p>انتخاب رشته</p>
+          </li>
+          <li class="flex justify-center items-center gap-x-2">
+            <span class="border-2 rounded-md bg-white border-purple-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
+                stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+
+            </span>
+            <p>تیزهوشان</p>
           </li>
         </ul>
-        <div class="w-full px-8 py-4 bg-white">
-          <button class="w-full h-12 rounded-xl text-white text-xl font-bold bg-gray-400 px-4">ثبت سفارش</button>
+        <div class="w-full px-8 py-4 bg-gray-100">
+          <button class="w-full h-12 rounded-xl text-white text-xl font-bold bg-purple-600 px-4">ثبت نام</button>
         </div>
       </div>
 
@@ -379,8 +440,120 @@
 
 
 
-
-
+  <!-- mentoring -->
+  <section class="bg-purple-100 w-full h-auto flex-col 
+    justify-center items-center py-10 background-mentoring">
+    <div class="w-full  lg:px-32">
+      <div class="w-full px-4 mb-2">
+        <div x-data="{tabOne : false}"
+          class="flex flex-col bg-white opacity-80 justify-center items-center w-full pt-2 rounded-lg shadow-lg">
+          <div @click="tabOne = !tabOne"
+            class="flex justify-between px-4 py-2 bg-white text-lg text-black w-full rounded-lg mb-2 font-bold cursor-pointer items-center">
+            <h3>whats your name</h3>
+            <svg :class="tabOne ? 'rotate-180 ' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6 transition-all duration-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+            </svg>
+          </div>
+          <div x-show="tabOne" class="px-4 text-purple-900 pb-6">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            libero illo dolorem recusandae iusto quod magnam.
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 mb-2">
+        <div x-data="{tabOne : false}"
+          class="flex flex-col bg-white opacity-80 justify-center items-center w-full pt-2 rounded-lg shadow-lg">
+          <div @click="tabOne = !tabOne"
+            class="flex justify-between px-4 py-2 bg-white text-lg text-black w-full rounded-lg mb-2 font-bold cursor-pointer items-center">
+            <h3>whats your name</h3>
+            <svg :class="tabOne ? 'rotate-180 ' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6 transition-all duration-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+            </svg>
+          </div>
+          <div x-show="tabOne" class="px-4 text-purple-900 pb-6">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            libero illo dolorem recusandae iusto quod magnam.
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 mb-2">
+        <div x-data="{tabOne : false}"
+          class="flex flex-col bg-white opacity-80 justify-center items-center w-full pt-2 rounded-lg shadow-lg">
+          <div @click="tabOne = !tabOne"
+            class="flex justify-between px-4 py-2 bg-white text-lg text-black w-full rounded-lg mb-2 font-bold cursor-pointer items-center">
+            <h3>whats your name</h3>
+            <svg :class="tabOne ? 'rotate-180 ' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6 transition-all duration-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+            </svg>
+          </div>
+          <div x-show="tabOne" class="px-4 text-purple-900 pb-6">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            libero illo dolorem recusandae iusto quod magnam.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full  lg:px-32">
+      <div class="w-full px-4 mb-2">
+        <div x-data="{tabOne : false}"
+          class="flex flex-col bg-white opacity-80 justify-center items-center w-full pt-2 rounded-lg shadow-lg">
+          <div @click="tabOne = !tabOne"
+            class="flex justify-between px-4 py-2 bg-white text-lg text-black w-full rounded-lg mb-2 font-bold cursor-pointer items-center">
+            <h3>whats your name</h3>
+            <svg :class="tabOne ? 'rotate-180 ' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6 transition-all duration-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+            </svg>
+          </div>
+          <div x-show="tabOne" class="px-4 text-purple-900 pb-6">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            libero illo dolorem recusandae iusto quod magnam.
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 mb-2">
+        <div x-data="{tabOne : false}"
+          class="flex flex-col bg-white opacity-80 justify-center items-center w-full pt-2 rounded-lg shadow-lg">
+          <div @click="tabOne = !tabOne"
+            class="flex justify-between px-4 py-2 bg-white text-lg text-black w-full rounded-lg mb-2 font-bold cursor-pointer items-center">
+            <h3>whats your name</h3>
+            <svg :class="tabOne ? 'rotate-180 ' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6 transition-all duration-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+            </svg>
+          </div>
+          <div x-show="tabOne" class="px-4 text-purple-900 pb-6">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            libero illo dolorem recusandae iusto quod magnam.
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 mb-2">
+        <div x-data="{tabOne : false}"
+          class="flex flex-col bg-white opacity-80 justify-center items-center w-full pt-2 rounded-lg shadow-lg">
+          <div @click="tabOne = !tabOne"
+            class="flex justify-between px-4 py-2 bg-white text-lg text-black w-full rounded-lg mb-2 font-bold cursor-pointer items-center">
+            <h3>whats your name</h3>
+            <svg :class="tabOne ? 'rotate-180 ' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6 transition-all duration-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+            </svg>
+          </div>
+          <div x-show="tabOne" class="px-4 text-purple-900 pb-6">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            libero illo dolorem recusandae iusto quod magnam.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- left section desctop-->
+    <!-- <div class="hidden lg:flex justify-center items-center w-full">
+      <img src="/assets/images/student.jfif" alt="">
+    </div> -->
+  </section>
 
 
 

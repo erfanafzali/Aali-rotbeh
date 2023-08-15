@@ -36,3 +36,28 @@ header {
     height: 650px;
   }
 }
+
+@media screen and (min-width: 724px) {
+  .background-mentoring {
+    background-image: linear-gradient(rgba(0, 0, 0.2, 0.2), #250029),
+      url("/assets/images/student.jfif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.title-services {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.services {
+}
+
+/* scroll mode */
+
+html {
+  scroll-behavior: smooth;
+}
